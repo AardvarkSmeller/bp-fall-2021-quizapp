@@ -9,11 +9,11 @@
     <TextView
             android:layout_width="82dp"
             android:layout_height="40dp"
-            android:text="Yo World!"
+            android:text="New Quiz"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" android:clickable="false"
             android:fontFamily="sans-serif-black" android:id="@+id/textView" app:autoSizeTextType="none"
-            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintVertical_bias="0.499"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.481"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
     <EditText
             android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
             app:layout_constraintEnd_toStartOf="@+id/nameSubmit" android:layout_marginEnd="7dp"
     />
     <Button
-            android:text="Ready!"
+            android:text="Start Quiz"
             android:layout_width="0dp"
             android:layout_height="46dp" android:id="@+id/nameSubmit"
             style="@style/Widget.AppCompat.Button.Small"
