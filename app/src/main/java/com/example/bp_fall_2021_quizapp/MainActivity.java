@@ -6,6 +6,8 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.appcompat.widget.AppCompatEditText;
+import android.widget.EditText;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public void startQuiz(View view){
         // set name variable every time user clicks "start"
-
+        String userName = (String) findViewById(R.id.nameText).toString();
         // If the name field is empty, prompt user to enter name
 
         // If user has entered name, begin quiz
