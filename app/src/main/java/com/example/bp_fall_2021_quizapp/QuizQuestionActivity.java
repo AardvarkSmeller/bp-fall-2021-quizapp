@@ -40,11 +40,11 @@ public class QuizQuestionActivity extends AppCompatActivity {
      */
     private void addQuestions(){
         // question 1
-
+        QuestionModel question1 = new QuestionModel("Which of the following is an item that used to be in the game?", "Radium", "Horse Saddle", "Bone Dust", "Trapdoors", 2);
         // question 2
-
+        QuestionModel question2 = new QuestionModel("Which of the following mobs has the most health?", "Player", "Villager", "Ravager", "Elder Guardian", 3);
         // question 3
-
+        QuestionModel question3 = new QuestionModel("Where can you head to in order to trade using emeralds?",  "A Village","A City" ,"The End", "A City", 1);
         // question 4
 
         // question 5
