@@ -7,13 +7,13 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity" android:background="#00AA00">
     <TextView
-            android:layout_width="82dp"
-            android:layout_height="40dp"
-            android:text="New Quiz"
+            android:layout_width="105dp"
+            android:layout_height="39dp"
+            android:text="Minecraft Quiz"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent" android:clickable="false"
             android:fontFamily="sans-serif-black" android:id="@+id/textView" app:autoSizeTextType="none"
-            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.454"
+            app:layout_constraintVertical_bias="0.453"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
     <Button
             android:text="Start Quiz"

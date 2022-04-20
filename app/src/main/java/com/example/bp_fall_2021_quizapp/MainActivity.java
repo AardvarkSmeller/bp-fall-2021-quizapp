@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     // Put class variables up here
     // Best practice is to make them private (can only be accessed within the class, or using getters/setters)
     // Each UI component that you want to reference needs a variable
-    private EditText nameInput;
+    private AppCompatEditText nameInput;
     /**
      * Method used to start an activity. It's the first method to run when the
      * activity begins
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         // set name variable every time user clicks "start"
-        String userName = nameInput.toString();
+        String userName = nameInput.getText().toString();
         // If the name field is empty, prompt user to enter name
         if (userName.equals("") || userName.equals("Name")) {
             Toast.makeText(getBaseContext(), "Please input your name", Toast.LENGTH_SHORT).show();
@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         // If user has entered name, begin quiz
         else {
             Intent intent = new Intent(this, QuizQuestionActivity.class);
+            intent.putExtra("nameInput", userName);
             startActivity(intent);
             finish(); // close current activity
             }
